@@ -3,7 +3,16 @@
 # Comparative Analysis: 
 Compare multiple machine learning models (e.g., Linear Regression, Support Vector Regressor) using MLFlow UI to visualize scores and parameters.
 
-![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFLow_params_metrics.png)
+The following snipshots shows how comparitive analysis can be conducted using MLFLow dashboard:
+
+- Parameters and metrics of the models
+    ![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFLow_params_metrics.png)
+
+- Model overview on dashboard
+    ![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFlow_models.png)
+
+- Graphs on model metrics
+    ![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFlow_SVR.png)
 
 # Features
 - **MLFlow Integration:** Utilize MLFlow to track experiments, log parameters, metrics, and artifacts, and manage model versions.
