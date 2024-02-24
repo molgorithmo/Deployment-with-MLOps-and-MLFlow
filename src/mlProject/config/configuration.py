@@ -61,7 +61,8 @@ class ConfigurationManager:
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.ElasticNet
+        elastic_net_params = self.params.ElasticNet
+        support_vector_params = self.params.SupportVectorMachine
         schema = self.schema.TARGET_COLUMN
         model_train = self.model_train
 
@@ -71,26 +72,37 @@ class ConfigurationManager:
             root_dir=config.root_dir,
             train_data_path=config.train_data_path,
             test_data_path=config.test_data_path,
-            model_name=config.model_name,
-            alpha=params.alpha,
-            l1_ratio=params.l1_ratio,
+            model_name_elastic_net=config.model_name_elastic_net,
+            model_name_linear_regression=config.model_name_linear_regression,
+            model_name_support_vector=config.model_name_support_vector,
+            C=support_vector_params.C,
+            alpha=elastic_net_params.alpha,
+            l1_ratio=elastic_net_params.l1_ratio,
             target_column=schema.name,
-            train_elastic_net=model_train.train_elastic_net        
+            train_elastic_net=model_train.train_elastic_net,
+            train_linear_regression=model_train.train_linear_regression,
+            train_support_vector_machine=model_train.train_support_vector_machine
         )
 
         return model_trainer_config
     
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config.model_evaluation
-        params = self.params.ElasticNet
+        params = self.params
         schema = self.schema.TARGET_COLUMN
+        model_train = self.model_train
 
         create_directories([config.root_dir])
 
         model_evaluation_config = ModelEvaluationConfig(
             root_dir=config.root_dir,
             test_data_path=config.test_data_path,
-            model_path=config.model_path,
+            elastic_net_model_path=config.elastic_net_model_path,
+            linear_regression_model_path=config.linear_regression_model_path,
+            support_vector_machine_model_path=config.support_vector_machine_model_path,
+            train_elastic_net=model_train.train_elastic_net,
+            train_linear_regression=model_train.train_linear_regression,
+            train_support_vector_machine=model_train.train_support_vector_machine,
             all_params=params,
             metrics_file_name=config.metrics_file_name,
             target_column=schema.name,
