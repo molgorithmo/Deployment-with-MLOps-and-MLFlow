@@ -3,7 +3,7 @@
 # Comparative Analysis: 
 Compare multiple machine learning models (e.g., Linear Regression, Support Vector Regressor) using MLFlow UI to visualize scores and parameters.
 
-![alt text]("C:\Users\mohsh\Desktop\MLFlow_SVR.png")
+![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFLow_params_metrics.png)
 
 # Features
 - **MLFlow Integration:** Utilize MLFlow to track experiments, log parameters, metrics, and artifacts, and manage model versions.
