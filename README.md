@@ -1,5 +1,10 @@
 # Deployment-with-MLOps-and-MLFlow
 
+# Comparative Analysis: 
+Compare multiple machine learning models (e.g., Linear Regression, Support Vector Regressor) using MLFlow UI to visualize scores and parameters.
+
+![alt text]("C:\Users\mohsh\Desktop\MLFlow_SVR.png")
+
 # Features
 - **MLFlow Integration:** Utilize MLFlow to track experiments, log parameters, metrics, and artifacts, and manage model versions.
 - **Dagshub Collaboration:** Leverage Dagshub for version control, collaboration, and tracking changes across machine learning projects.
