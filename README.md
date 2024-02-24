@@ -1,5 +1,7 @@
 # Deployment-with-MLOps-and-MLFlow
 
+This repository serves as a comprehensive guide and demonstration of deploying a machine learning project using MLFlow, Dagshub, AWS S3, and MLOps principles.
+
 # Comparative Analysis: 
 Compare multiple machine learning models (e.g., Linear Regression, Support Vector Regressor) using MLFlow UI to visualize scores and parameters.
 
