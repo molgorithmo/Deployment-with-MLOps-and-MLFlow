@@ -75,8 +75,6 @@ class ModelEvaluation:
                 mlflow.log_metric("lr_r2", r2)
                 mlflow.log_metric("lr_mae", mae)
 
-                mlflow.log_text("Linear Regression")
-
                 if tracking_url_type_store != "file":
                     mlflow.sklearn.log_model(linear_regression_model, "model", registered_model_name="Linear Regression Model")
                 else:
