@@ -10,6 +10,9 @@ The following snipshots shows how comparitive analysis can be conducted using ML
 - Parameters and metrics of the models
     ![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFLow_params_metrics.png)
 
+- Tabular view of the results
+    ![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/Tabular%20view.png)
+
 - Model overview on dashboard
     ![](https://github.com/molgorithmo/Deployment-with-MLOps-and-MLFlow/blob/main/imgs/MLFlow_models.png)
 
